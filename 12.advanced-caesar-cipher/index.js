@@ -8,34 +8,7 @@
 //    });
 
 const caeserCipher = (stringPhrase, integer) => {
-	const alphabet = [
-		'A',
-		'B',
-		'C',
-		'D',
-		'E',
-		'F',
-		'G',
-		'H',
-		'I',
-		'J',
-		'K',
-		'L',
-		'M',
-		'N',
-		'O',
-		'P',
-		'Q',
-		'R',
-		'S',
-		'T',
-		'U',
-		'V',
-		'W',
-		'X',
-		'Y',
-		'Z',
-	]
+	const alphabet = [ 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', ]
 	const array = []
 	const splitStringPhrase = stringPhrase.split('')
 	const calculateNewAlphabetPosition = (index, integer) => {
@@ -62,4 +35,4 @@ const caeserCipher = (stringPhrase, integer) => {
 	return array.join('')
 }
 
-caeserCipher("I love JavaScript!", -100)
+caeserCipher('I love JavaScript!', -100)
